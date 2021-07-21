@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    max-width: 1440px;
+    text-align: center;
+    background-image: url('/IP-Tracker/images/pattern-bg.png');
+    background-size: cover;
+    height: 30vh;
+}
+
+.title {
+    color: #ffffff;
+    margin: 10px;
+}
+
+form {
+    padding-bottom: 20px;
+    margin: 0 50px;
+}
+
+.error-message{
+    color: rgb(187, 71, 71);
+    text-align: left;
+}
+
+.input-div { 
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    /* padding-bottom: 20px;  */
+    padding-top: 20px;
+}
+
+.input-field {
+ flex-grow: 1;
+  max-width: 500px;
+  padding: 10px 11px 11px 11px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  outline: none;
+}
+
+input-field::placeholder {
+    background-color: hsl(0, 0%, 17%);
+}
+.submit-btn{
+    background-color: #000000;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+ main {
+    display: flex;
+    flex-direction: column;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 0 20px;
+    z-index: 10;
+}
+
+.content > p {
+    color: hsl(0, 0%, 59%);
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 10px;
+    padding: 10px;
+}
+
+.content > h2 {
+    font-size: 0.938rem;
+    font-weight: 700;
+    padding-top: 5px;
+    /* padding-bottom: 10px; */
+    padding-left: 10px;
+}
+
+.mapId {
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        flex-direction: row;
+        justify-content: center;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .content > h2 {
+        margin-right: 40px;
+    }
+}
