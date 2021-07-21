@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../IP-Tracker/src/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <title>IP Address Tracker</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">IP Address Tracker</h1>
+        <form action="#">
+            <div class="input-div">
+            <input type="text" placeholder="Search for any IP address or domain" class="input-field" id="inputField" value = "">
+            <button type="submit" class="submit-btn" id="submitBtn" aria-label="submit-icon"><img src="../IP-Tracker/images/icon-arrow.svg" alt=""></button>
+            </div>
+            <span class="error-message" id="errorMessage"></span>
+        </form>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content">
+                <p>IP ADDRESS</p>
+                <h2 id="ipAddress"></h2>
+            </div>
+            <div class="content" >
+                <p>LOCATION</p>
+                <h2 id="location"></h2>
+            </div>
+            <div class="content">
+                <p>TIMEZONE</p>
+                <h2 id="timezone"></h2>
+            </div>
+            <div class="content">
+                <p>ISP</p>
+                <h2 id="ISP"></h2>
+            </div>
+        </div>
+         <div id="mapid" class="mapId"></div> 
+    </main>
+
+    <script src="../IP-Tracker/src/app.js"></script>
+</body>
+</html>
