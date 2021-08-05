@@ -16,6 +16,7 @@
 
 
 - View Demo: 
+- https://ipaddress-trackerjs.netlify.app/
 
 ### Built With
 
@@ -29,12 +30,12 @@
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 * View the optimal layout for each page depending on their device's screen size
-* See their own IP Address on the map on the initial page load
+* Users can see their own IP Address on the map on the initial page load
 * Search for any IP addresses or domains and see the key information and location
 
 
 ## Contact
 
-- GitHub [@your-username](https://{github.com/LolaMedina)
-- Twitter [@your-twitter](https://{twitter.com/LolaOS_})
+- GitHub [@LolaMedina](https://github.com/LolaMedina)
+- Twitter [@LolaOS_](https://twitter.com/LolaOS_)
 
