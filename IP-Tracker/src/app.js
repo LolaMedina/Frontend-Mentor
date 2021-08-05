@@ -53,10 +53,8 @@ async function fetchData(inputInfo, inputType) {
 function generateInfo(info) {
     ipAddress.textContent = info.ip;
     ISP.textContent = info.isp;
-    locationID.textContent = `${info.location.city}, ${info.location.country} ${info.location.postalCode}`;
-    timezone.textContent = info.location.timezone; 
-
-    console.log(info.location)
+    locationID.textContent = `${info.location.region}, ${info.location.city} ${info.location.postalCode}`;
+    timezone.textContent = `UTC ${info.location.timezone}`; 
 
 }
 
